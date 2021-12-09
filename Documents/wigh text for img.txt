@@ -1,0 +1,22 @@
+tw-story[tags~="opening"] {
+  background-image:url("https://danielle-jalotjot.github.io/wighevensmallerlol.jpg");
+  background-size:cover;
+  max-width: 99%;
+	height: auto;
+  transition-duration: 1s;
+}
+
+tw-story[tags~="start"] {
+  background-image:url("https://danielle-jalotjot.github.io/itwasnice.png");
+  background-size:cover;
+  max-width: 99%;
+	height: auto;
+  transition-duration: 1s;
+}
+
+tw-story[tags~="mmm"] {
+  background-image:url("https://danielle-jalotjot.github.io/ofcoursedude.png");
+  background-size:cover;
+  max-width: 99%;
+	height: auto;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DSJ Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 80%;
+    height: 80%;
+  }
+  </style>
+</head>
+<body>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>DSJ Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Danielle Sipin Jalotjot Portfolio</h1>
+		<p>click around to learn about me and my art, and thank you for stopping by!</p>
+
+<nav class="navbar navbar-expand-sm bg-info navbar-light justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+	  
+	  <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">
+        Art 74</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="glitchart.html">Glitch Art</a>
+        <a class="dropdown-item" href="mememashup.html">Meme Mashup</a>
+        <a class="dropdown-item" href="mcsdemo.html">Minecraft Sculpture</a>
+		  <a class="dropdown-item" href="3dprinting.html">3D Printing</a>
+        <a class="dropdown-item" href="netart.html">Net Art</a>
+        <a class="dropdown-item" href="p5.jsportrait.html">Self Portrait</a>
+		  <a class="dropdown-item" href="diyps.html">p5.js Photoshop</a>
+        <a class="dropdown-item" href="game.html">p5.js Game</a>
+      </div>
+	
+      <li class="nav-item">
+        <a class="nav-link" href="traditionalwork.html">Traditional Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="digitalwork.html">Digital Work</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="ddgt.html">DDGT</a>
+		  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		  
+		  
+      </li>
+    </li>
+  </ul>
+</nav>
+	  
+      <div class="container">
+        <br><h2>Game Interaction - p5.js</h2>
+        <p>Using p5.js, I created a simple game centering around Filipino culture, specifically what it's like to speak with your relatives. The following three questions you see in the game are very common and quite judgemental, usually coming from your tita (aunt). Click and move your cursor to get started!</p>
+
+<iframe src="p5.js/game2/index.html" height="604" width="604" title="p5.js game"></iframe>
+		  
+		        <div class="container">
+        <br><p>Here is the code for the dress-up game:</p>
+					<pre style="text-align:left">
+var img;
+var bg;
+var ballx = 300;
+var bally = 300;
+var ballSize = 40;
+var score = 0;
+var gameState = "L1";
+
+function preload() {
+ bg = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/party.png');
+  img_shh = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/shh.png');
+  img_lvl1 = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/gain.PNG');
+  img_lvl2 = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/nurse.PNG');
+  img_lvl3 = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/gfbf.PNG');
+  img_gametitle = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/gametitle.png');
+  img_gamending = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/gamending.png');
+  
+}
+
+function setup() {
+  background(bg);
+  createCanvas(600, 600);
+  textAlign(CENTER);
+  textSize(20);
+} // end setup
+
+function draw() {
+  // cursor('https://danielle-jalotjot.github.io/DSJ.Portfolio/shh.png');
+  
+  background(bg);
+  
+  if (gameState == "L1") {
+    levelOne();
+  }
+  if (gameState == "L2") {
+    levelTwo();
+  }
+  if (gameState == "L3") {
+    levelThree();
+  }
+
+  // score text
+  fill(0, 72, 255);
+  textSize(25);
+  textStyle(ITALIC);
+  text("Score: " + score, width / 2, 40);
+} // end draw
+
+function levelOne() {
+  
+  cursor('grab');
+  fill(255, 255, 255);
+  textSize(35);
+  textStyle(BOLDITALIC);
+  text("Level 1", width / 2, height - 10);
+  var distToBall = dist(ballx, bally, mouseX, mouseY);
+  if (distToBall < ballSize / 2) {
+    ballx = random(width);
+    bally = random(height);
+    score = score + 1;
+  }
+  if (score > 10) {
+    // call level 2
+    // fill(random(255));
+    gameState = "L2";
+  }
+
+  image(img_lvl1, ballx-175, bally-175, 350, 350);
+  
+} // end level one
+
+function levelTwo() {
+  
+  cursor('grab');
+  background(bg);
+  fill(255, 255, 255);
+  textSize(35);
+  textStyle(BOLDITALIC);
+  text("Level 2", width / 2, height - 10);
+  var distToBall = dist(ballx, bally, mouseX, mouseY);
+  if (distToBall < ballSize / 2) {
+    ballx = random(width);
+    bally = random(height);
+    score = score + 1;
+  }
+  if (score > 20) {
+    // level 3
+    gameState = "L3";
+  }
+
+  image(img_lvl2, ballx-175, bally-175, 350, 350);
+  
+} // end level two
+
+function levelThree() {
+  
+  cursor('grab');
+  background(bg);
+  fill(255, 255, 255);
+  textSize(35);
+  textStyle(BOLDITALIC);
+  text("Level 3", width / 2, height - 10);
+  var distToBall = dist(ballx, bally, mouseX, mouseY);
+  if (distToBall < ballSize / 2) {
+    ballx = random(width);
+    bally = random(height);
+    ballSize = ballSize - 1;
+    score = score + 1;
+  }
+  
+  image(img_lvl3, ballx-175, bally-175, 350, 350);
+
+} // end level three
+
+
+
+
+
+
+</body>
+</html>

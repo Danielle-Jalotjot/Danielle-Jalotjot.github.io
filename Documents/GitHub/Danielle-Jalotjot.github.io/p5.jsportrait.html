@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DSJ Self Portrait</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 80%;
+    height: 80%;
+  }
+  </style>
+</head>
+<body>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>DSJ Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Danielle Sipin Jalotjot Portfolio</h1>
+		<p>click around to learn about me and my art, and thank you for stopping by!</p>
+
+<nav class="navbar navbar-expand-sm bg-info navbar-light justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+	  
+	  <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">
+        Art 74</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="glitchart.html">Glitch Art</a>
+        <a class="dropdown-item" href="mememashup.html">Meme Mashup</a>
+        <a class="dropdown-item" href="mcsdemo.html">Minecraft Sculpture</a>
+		  <a class="dropdown-item" href="3dprinting.html">3D Printing</a>
+        <a class="dropdown-item" href="netart.html">Net Art</a>
+        <a class="dropdown-item" href="p5.jsportrait.html">Self Portrait</a>
+		  <a class="dropdown-item" href="diyps.html">p5.js Photoshop</a>
+        <a class="dropdown-item" href="game.html">p5.js Game</a>
+      </div>
+	
+      <li class="nav-item">
+        <a class="nav-link" href="traditionalwork.html">Traditional Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="digitalwork.html">Digital Work</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="ddgt.html">DDGT</a>
+		  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		  
+		  
+      </li>
+    </li>
+  </ul>
+</nav>
+	  
+	  <div class="container">
+        <br><h2>Self Portrait - p5.js</h2>
+        <p>Using p5.js, a creative coding software, I created this self portrait by assembling different 2D shapes and forms. There was a lot of trial and error in making this self portrait as I never used p5.js. However, after working in the program for a bit and familiarizing myself with the coordinate system, I really enjoyed the process and how the image came out!</p>
+<iframe src="p5.js/self_portrait_final/selfie/index.html" height="604" width="604" title="p5.js Self Portrait"></iframe>
+		  
+		        <div class="container">
+        <br><p>Here is the code for the image:</p>
+					<pre style="text-align:left">
+function setup() {
+  createCanvas(600, 600);
+  xCenter = 200;
+  yCenter = 200;
+}
+
+function draw() {
+  background(94, 173, 136);
+
+  //background shape - orange shadow
+  fill(135, 52, 19, 150);
+  noStroke();
+  rect(30, 30, 515, 435);
+
+  //background shape - orange
+  fill(255, 111, 0, 150);
+  noStroke();
+  rect(20, 20, 500, 420);
+
+  //background shape - purple
+  fill(109, 71, 222, 150);
+  noStroke();
+  circle(380, 480, 500);
+
+  //cloud - large
+  fill(255, 255, 255, 200);
+  //      x,  y,  width, height
+  ellipse(580, 40, 380, 110);
+
+  //cloud - small
+  fill(255, 255, 255, 200);
+  //      x,  y,  width, height
+  ellipse(420, 80, 100, 30);
+
+  //cloud - left
+  fill(255, 255, 255, 200);
+  //      x,  y,  width, height
+  ellipse(20, 200, 260, 80);
+
+  //cloud - left bottom
+  fill(255, 255, 255, 200);
+  //      x,  y,  width, height
+  ellipse(85, 290, 150, 30);
+
+  //neck
+  fill(176, 126, 72);
+  stroke(163, 115, 64);
+  strokeWeight(3);
+  //    x,  y,  width, height
+  rect(330, 330, 60, 65);
+
+  //sleeves
+  fill(219, 63, 50);
+  stroke(156, 43, 34);
+  strokeWeight(4);
+  //  rb x,rb y,  rt x,rt y, lt x,lt y, lb x,lb y
+  quad(520, 600, 450, 390, 270, 390, 200, 600);
+
+  //shirt
+  fill(242, 82, 70);
+  stroke(199, 55, 44);
+  strokeWeight(4);
+  //  rb x,rb y,  rt x,rt y, lt x,lt y, lb x,lb y
+  quad(460, 600, 420, 380, 300, 380, 260, 600);
+
+  //shirt pocket
+  fill(173, 45, 35);
+  stroke(156, 43, 34);
+  //  rb x,rb y,  rt x,rt y, lt x,lt y, lb x,lb y
+  quad(420, 600, 400, 540, 320, 540, 300, 600);
+
+  //string 1
+  strokeWeight(3);
+  //    x,  y,  width,  height
+  rect(340, 380, 6, 70);
+
+  //string 2
+  strokeWeight(3);
+  //    x,  y,  width,  height
+  rect(375, 380, 6, 70);
+
+  //ball 1
+  fill(71, 104, 252);
+  stroke(48, 69, 191);
+  strokeWeight(3);
+  circle(343, 450, 15);
+
+  //ball 1
+  fill(71, 104, 252);
+  stroke(48, 69, 191);
+  strokeWeight(3);
+  circle(378, 450, 15);
+
+  //hair body
+  fill(26, 16, 5);
+  stroke(18, 11, 3);
+  strokeWeight(4);
+  //  x,  y,  width,  height,  start,  stop
+  arc(360, 320, 260, 400, PI, TWO_PI, CHORD);
+
+  //head
+  fill(201, 146, 87);
+  stroke(176, 126, 72);
+  strokeWeight(3);
+  //        x,    y,  width, height
+  ellipse(360, 250, 180, 230);
+
+  //right eye
+  fill(26, 16, 5);
+  noStroke();
+  //        x,  y,  width, height
+  ellipse(400, 240, 15, 30);
+
+  //left eye
+  //        x,  y,  width, height
+  ellipse(320, 240, 15, 30);
+
+  //eye highlights
+  fill(255, 255, 255);
+  noStroke();
+  //right eye
+  //        x,  y,  width, height
+  ellipse(402, 236, 5, 10);
+
+  //left eye
+  //        x,  y,  width, height
+  ellipse(322, 236, 5, 10);
+
+  //nose
+  fill(176, 126, 72);
+  stroke(163, 115, 64);
+  strokeWeight(3);
+  //      rb x, rb y,  top x, top y,  lb x, lb y
+  triangle(370, 280, 360, 260, 350, 280);
+
+  //blush 1
+  fill(179, 71, 127, 100);
+  noStroke();
+  circle(305, 280, 45);
+
+  //blush 2
+  fill(179, 71, 127, 100);
+  noStroke();
+  circle(415, 280, 45);
+
+  //bangs
+  fill(26, 16, 5);
+  noStroke();
+  //  x,  y,  width,  height,  start,  stop
+  arc(360, 220, 165, 190, PI, TWO_PI);
+
+  //bang cutout 1
+  fill(201, 146, 87);
+  //    x,  y,  width, height
+  rect(300, 198, 3, 35);
+
+  //bang cutout 2
+  fill(201, 146, 87);
+  //    x,  y,  width, height
+  rect(345, 210, 3, 35);
+
+  //bang cutout 3
+  fill(201, 146, 87);
+  //    x,  y,  width, height
+  rect(370, 190, 3, 35);
+
+  //bang cutout 4
+  fill(201, 146, 87);
+  //    x,  y,  width, height
+  rect(415, 200, 3, 35);
+
+  //sun layer4
+  fill(255, 213, 0, 70);
+  circle(150, 140, 190);
+
+  //sun layer3
+  fill(255, 213, 0, 100);
+  circle(150, 140, 170);
+
+  //sun layer2
+  fill(255, 213, 0, 130);
+  circle(150, 140, 150);
+
+  //sun
+  fill(255, 213, 0);
+  circle(150, 140, 130);
+}
+
+
+
+
+</body>
+</html>

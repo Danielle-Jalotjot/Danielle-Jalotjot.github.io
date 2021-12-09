@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DSJ DIY PS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 80%;
+    height: 80%;
+  }
+  </style>
+</head>
+<body>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>DSJ Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Danielle Sipin Jalotjot Portfolio</h1>
+		<p>click around to learn about me and my art, and thank you for stopping by!</p>
+
+<nav class="navbar navbar-expand-sm bg-info navbar-light justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+	  
+	  <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">
+        Art 74</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="glitchart.html">Glitch Art</a>
+        <a class="dropdown-item" href="mememashup.html">Meme Mashup</a>
+        <a class="dropdown-item" href="mcsdemo.html">Minecraft Sculpture</a>
+		  <a class="dropdown-item" href="3dprinting.html">3D Printing</a>
+        <a class="dropdown-item" href="netart.html">Net Art</a>
+        <a class="dropdown-item" href="p5.jsportrait.html">Self Portrait</a>
+		  <a class="dropdown-item" href="diyps.html">p5.js Photoshop</a>
+        <a class="dropdown-item" href="game.html">p5.js Game</a>
+      </div>
+	
+      <li class="nav-item">
+        <a class="nav-link" href="traditionalwork.html">Traditional Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="digitalwork.html">Digital Work</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="ddgt.html">DDGT</a>
+		  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		  
+		  
+      </li>
+    </li>
+  </ul>
+</nav>
+	  
+      <div class="container">
+        <br><h2>DIY Photoshop - p5.js</h2>
+        <p>Using p5.js, I created a simple dress-up game in which you can mix and match different outfits and expressions with the blank doll. Press "x" to clear your selection and press "p" to save a copy of your masterpiece! Have fun, and here are the keyboard keys to get started:</p>
+		  <p>0: black sneakers | w: white sneakers<br>
+			  1: dark high-waisted pants | 2: light pants | 3: shorts<br>
+		  4: black crop tee | 5: purple crop tee | 6: yellow crop tee<br>
+		  7: denim jacket | 8: yellow polka dot sweater | 9: ice blue puffy jacket<br>
+			  s: smile expression | j: judging expression | t: tongue out expression
+		  </p><br>
+<iframe src="p5.js/diy_ps/diy_ps/diyps/index.html" height="1004" width="1004" title="p5.js DIY Photoshop"></iframe>
+		  
+		        <div class="container">
+        <br><p>Here is the code for the dress-up game:</p>
+					<pre style="text-align:left">
+var img;
+var bg;
+var initials ='dsj'; // your initials
+var choice = '1'; // starting choice, so it is not empty
+var screenbg = 250; // off white background
+var lastscreenshot=61; // last screenshot never taken1
+var canvaswidth=1000; 
+var canvasheight=1000;
+
+function preload() {
+// preload() runs once, it may make you wait
+//  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
+// you can link to an image on your github account
+  bg = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/bg.png'); 
+  img_bg = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/bg.png');
+  img_darkpants = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/darkpants.png');
+  img_lightpants = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/lightpants.png');
+  img_shorts = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/shorts.png');
+  img_blackshirt = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/blackshirt.png');
+  img_purpleshirt = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/purpleshirt.png');
+  img_yellowshirt = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/yellowshirt.png');
+  img_denimjacket = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/denimjacket.png');
+  img_yellowjacket = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/yellowjacket.png');
+  img_puffyjacket = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/puffyjacket.png');
+  img_blackshoes = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/blackshoes.png');
+  img_whiteshoes = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/whiteshoes.png');
+  img_smile = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/smile.png');
+  img_girrl = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/girrl.png');
+  img_tongueout = loadImage('https://danielle-jalotjot.github.io/DSJ.Portfolio/tongueout.png');
+  
+}
+
+function setup() {
+createCanvas(canvaswidth, canvasheight);  // canvas size
+background(screenbg);   // use our background screen color
+  background(bg);
+}
+
+function draw() {
+ 
+//  background(bg);
+  
+  if (keyIsPressed) {
+    choice = key; // set choice to the key that was pressed
+    clear_print(); // check to see if it is clear screen or save image
+  }
+  if (mouseIsPressed){
+    newkeyChoice(choice);  // if the mouse is pressed call newkeyChoice
+  }
+}
+
+
+function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
+  // the key mapping if statements that you can change to do anything you want.
+  // just make sure each key option has the a stroke or fill and then what type of 
+  // graphic function
+
+ if (toolChoice == '1' ) {  // first tool
+   
+    image(img_darkpants,mouseX-500, mouseY-500, 1000, 1000);
+  } else if (toolChoice == '2') { // second tool
+    
+    image(img_lightpants, mouseX-500, mouseY-500, 1000, 1000);
+  } else if (toolChoice == '3') { // third tool
+
+    image(img_shorts, mouseX-500, mouseY-500, 1000, 1000);
+  } else if (toolChoice == '4') {
+
+    image(img_blackshirt, mouseX-500, mouseY-300, 1000, 1000);
+  } else if (toolChoice == '5') {
+
+    image(img_purpleshirt, mouseX-500, mouseY-300, 1000, 1000);
+  } else if (toolChoice == '6') {
+
+    image(img_yellowshirt, mouseX-500, mouseY-300, 1000, 1000);
+  } else if (toolChoice == '7') {
+
+    image(img_denimjacket, mouseX-500, mouseY-300, 1000, 1000);
+  } else if (toolChoice == '8') {
+
+    image(img_yellowjacket, mouseX-500, mouseY-300, 1000, 1000);
+  } else if (toolChoice == '9') {
+    
+    image(img_puffyjacket, mouseX-500, mouseY-300, 1000, 1000);
+  } else if (toolChoice == '0') {
+    
+    image(img_blackshoes, mouseX-500, mouseY-850, 1000, 1000);
+  } else if (toolChoice == 'w') {
+    
+    image(img_whiteshoes, mouseX-500, mouseY-850, 1000, 1000);
+  } else if (toolChoice == 's') {
+    
+    image(img_smile, mouseX-500, mouseY-125, 1000, 1000);
+  } else if (toolChoice == 'j') {
+    
+    image(img_girrl, mouseX-500, mouseY-125, 1000, 1000);
+  } else if (toolChoice == 't') {
+    
+    image(img_tongueout, mouseX-500, mouseY-125, 1000, 1000);
+  } else if (toolChoice == 'w') {
+    
+    fill(300, 100, 0, 80);
+    rect(mouseX, mouseY, 40, 40);
+  } else if (toolChoice == '0') {
+    stroke(0, 0);
+    fill(random(255), random(255), random(255), random(255));
+    rect(mouseX, mouseY, 200, 150);
+  }
+
+}
+
+function clear_print() {
+// this will do one of two things, x clears the screen by resetting the background
+// p calls the routine saveme, which saves a copy of the screen
+  if (key == 'x' || key == 'X') {
+    background(screenbg); // set the screen back to the background color
+    background(bg);
+  } else if (key == 'p' || key == 'P') {
+     saveme();  // call saveme which saves an image of the screen
+  }
+}
+
+function saveme(){
+    //this will save the name as the intials, date, time and a millis counting number.
+    // it will always be larger in value then the last one.
+  filename=initials+day() + hour() + minute() +second();
+  if (second()!=lastscreenshot) { // don't take a screenshot if you just took one
+    saveCanvas(filename, 'jpg');
+  }
+  lastscreenshot=second(); // set this to the current second so no more than one per second
+  
+}
+
+
+
+
+</body>
+</html>
