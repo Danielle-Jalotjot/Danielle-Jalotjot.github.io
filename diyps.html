@@ -83,7 +83,7 @@
 	  
       <div class="container">
         <br><h2>DIY Photoshop - p5.js</h2>
-        <p>Using p5.js, I created a simple dress-up game in which you can mix and match different outfits and expressions with the blank doll. Press "x" to clear your selection and press "p" to save a copy of your masterpiece! Have fun, and here are the keyboard keys to get started:</p>
+        <p>Using p5.js, I created a simple dress-up game in which you can mix and match different outfits and expressions with the blank doll. Press "x" to clear your selection and press "p" to save a copy of your masterpiece! Center your cursor to your desired placement of the image. Have fun, and here are the keyboard keys to get started:</p>
 		  <p>0: black sneakers | w: white sneakers<br>
 			  1: dark high-waisted pants | 2: light pants | 3: shorts<br>
 		  4: black crop tee | 5: purple crop tee | 6: yellow crop tee<br>
@@ -154,46 +154,46 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
 
  if (toolChoice == '1' ) {  // first tool
    
-    image(img_darkpants,mouseX-500, mouseY-500, 1000, 1000);
+    image(img_darkpants,mouseX-300, mouseY-300, 600, 600);
   } else if (toolChoice == '2') { // second tool
     
-    image(img_lightpants, mouseX-500, mouseY-500, 1000, 1000);
+    image(img_lightpants, mouseX-300, mouseY-300, 600, 600);
   } else if (toolChoice == '3') { // third tool
 
-    image(img_shorts, mouseX-500, mouseY-500, 1000, 1000);
+    image(img_shorts, mouseX-300, mouseY-300, 600, 600);
   } else if (toolChoice == '4') {
 
-    image(img_blackshirt, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_blackshirt, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '5') {
 
-    image(img_purpleshirt, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_purpleshirt, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '6') {
 
-    image(img_yellowshirt, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_yellowshirt, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '7') {
 
-    image(img_denimjacket, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_denimjacket, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '8') {
 
-    image(img_yellowjacket, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_yellowjacket, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '9') {
     
-    image(img_puffyjacket, mouseX-500, mouseY-300, 1000, 1000);
-  } else if (toolChoice == '0') {
+    image(img_puffyjacket, mouseX-300, mouseY-180, 600, 600);
+  } else if (toolChoice == 'b') {
     
-    image(img_blackshoes, mouseX-500, mouseY-850, 1000, 1000);
+    image(img_blackshoes, mouseX-300, mouseY-510, 600, 600);
   } else if (toolChoice == 'w') {
     
-    image(img_whiteshoes, mouseX-500, mouseY-850, 1000, 1000);
+    image(img_whiteshoes, mouseX-300, mouseY-510, 600, 600);
   } else if (toolChoice == 's') {
     
-    image(img_smile, mouseX-500, mouseY-125, 1000, 1000);
+    image(img_smile, mouseX-295, mouseY-75, 600, 600);
   } else if (toolChoice == 'j') {
     
-    image(img_girrl, mouseX-500, mouseY-125, 1000, 1000);
+    image(img_girrl, mouseX-295, mouseY-75, 600, 600);
   } else if (toolChoice == 't') {
     
-    image(img_tongueout, mouseX-500, mouseY-125, 1000, 1000);
+    image(img_tongueout, mouseX-295, mouseY-75, 600, 600);
   } else if (toolChoice == 'w') {
     
     fill(300, 100, 0, 80);

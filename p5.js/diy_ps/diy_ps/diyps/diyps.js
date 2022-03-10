@@ -57,46 +57,46 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
 
  if (toolChoice == '1' ) {  // first tool
    
-    image(img_darkpants,mouseX-500, mouseY-500, 1000, 1000);
+    image(img_darkpants,mouseX-300, mouseY-300, 600, 600);
   } else if (toolChoice == '2') { // second tool
     
-    image(img_lightpants, mouseX-500, mouseY-500, 1000, 1000);
+    image(img_lightpants, mouseX-300, mouseY-300, 600, 600);
   } else if (toolChoice == '3') { // third tool
 
-    image(img_shorts, mouseX-500, mouseY-500, 1000, 1000);
+    image(img_shorts, mouseX-300, mouseY-300, 600, 600);
   } else if (toolChoice == '4') {
 
-    image(img_blackshirt, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_blackshirt, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '5') {
 
-    image(img_purpleshirt, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_purpleshirt, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '6') {
 
-    image(img_yellowshirt, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_yellowshirt, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '7') {
 
-    image(img_denimjacket, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_denimjacket, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '8') {
 
-    image(img_yellowjacket, mouseX-500, mouseY-300, 1000, 1000);
+    image(img_yellowjacket, mouseX-300, mouseY-180, 600, 600);
   } else if (toolChoice == '9') {
     
-    image(img_puffyjacket, mouseX-500, mouseY-300, 1000, 1000);
-  } else if (toolChoice == '0') {
+    image(img_puffyjacket, mouseX-300, mouseY-180, 600, 600);
+  } else if (toolChoice == 'b') {
     
-    image(img_blackshoes, mouseX-500, mouseY-850, 1000, 1000);
+    image(img_blackshoes, mouseX-300, mouseY-510, 600, 600);
   } else if (toolChoice == 'w') {
     
-    image(img_whiteshoes, mouseX-500, mouseY-850, 1000, 1000);
+    image(img_whiteshoes, mouseX-300, mouseY-510, 600, 600);
   } else if (toolChoice == 's') {
     
-    image(img_smile, mouseX-500, mouseY-125, 1000, 1000);
+    image(img_smile, mouseX-295, mouseY-75, 600, 600);
   } else if (toolChoice == 'j') {
     
-    image(img_girrl, mouseX-500, mouseY-125, 1000, 1000);
+    image(img_girrl, mouseX-295, mouseY-75, 600, 600);
   } else if (toolChoice == 't') {
     
-    image(img_tongueout, mouseX-500, mouseY-125, 1000, 1000);
+    image(img_tongueout, mouseX-295, mouseY-75, 600, 600);
   } else if (toolChoice == 'w') {
     
     fill(300, 100, 0, 80);
