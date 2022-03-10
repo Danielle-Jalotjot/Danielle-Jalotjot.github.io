@@ -4,8 +4,8 @@ var initials ='dsj'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken1
-var canvaswidth=1000; 
-var canvasheight=1000;
+var canvaswidth=600; 
+var canvasheight=600;
 
 function preload() {
 // preload() runs once, it may make you wait
